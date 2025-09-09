@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Patrícia Restaurante</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #4B0000; /* Vermelho escuro */
+            color: #f7fafc;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Container Principal do Cardápio -->
+    <div class="max-w-4xl mx-auto bg-[#1a1a1a] rounded-xl shadow-2xl p-6 md:p-10">
+
+        <!-- Header do Cardápio -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-[#f6e05e] drop-shadow-lg">PATRÍCIA RESTAURANTE</h1>
+            <p class="text-xl md:text-2xl mt-2 text-gray-300">Sabor e Novidade a Cada Garfada!</p>
+        </div>
+
+        <!-- Linha Separadora -->
+        <div class="w-full h-1 bg-gray-600 rounded-full my-8"></div>
+
+        <!-- Seção de Massas - Monte seu Macarrão -->
+        <section class="mb-10">
+            <div class="text-center mb-6">
+                <span class="inline-block bg-[#f6e05e] text-[#1a202c] px-4 py-1 rounded-full font-bold uppercase text-lg transform rotate-[-3deg] shadow-lg">
+                    NOVIDADE!
+                </span>
+                <h2 class="text-4xl font-bold mt-4 text-white">Monte seu Macarrão</h2>
+                <p class="text-gray-400 mt-2">Personalize sua massa do seu jeito! Escolha, misture e se delicie.</p>
+            </div>
+
+            <!-- Preço Fixo e Descrição -->
+            <div class="bg-[#282828] p-6 rounded-lg shadow-xl text-center mb-6">
+                <p class="text-2xl font-semibold mb-2 text-[#f6e05e]">A partir de R$ 25,00</p>
+                <p class="text-gray-300">Escolha uma massa, um molho e 3 recheios. Finalizado com queijo mussarela e salsa fresca.</p>
+            </div>
+
+            <!-- Passo a Passo com Flexbox para layout responsivo -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Passo 1: Massa -->
+                <div class="bg-[#282828] p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-3 text-white">1. Escolha sua Massa</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>- Penne</li>
+                        <li>- Espaguete</li>
+                        <li>- Fusilli</li>
+                        <li>- Ninho</li>
+                    </ul>
+                </div>
+
+                <!-- Passo 2: Molho -->
+                <div class="bg-[#282828] p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-3 text-white">2. Escolha seu Molho</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>- Bolonhesa (carne moída)</li>
+                        <li>- Quatro Queijos</li>
+                        <li>- Branco</li>
+                        <li>- Sugo (tomate fresco)</li>
+                    </ul>
+                </div>
+
+                <!-- Passo 3: Recheios -->
+                <div class="bg-[#282828] p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-3 text-white">3. Escolha seus Recheios (até 3)</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>- Bacon em cubos</li>
+                        <li>- Brócolis</li>
+                        <li>- Calabresa</li>
+                        <li>- Frango desfiado</li>
+                        <li>- Milho e ervilha</li>
+                        <li>- Ovos de codorna</li>
+                        <li>- Queijo e presunto</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linha Separadora -->
+        <div class="w-full h-1 bg-gray-600 rounded-full my-8"></div>
+
+        <!-- Seção de Bebidas -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold text-center mb-6 text-white">Bebidas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Bebida 1 -->
+                <div class="flex justify-between items-center bg-[#282828] p-4 rounded-lg shadow-lg">
+                    <span class="text-lg font-semibold">Refrigerante Lata (Diversos)</span>
+                    <span class="text-lg text-[#f6e05e]">R$ 6,00</span>
+                </div>
+                <!-- Bebida 2 -->
+                <div class="flex justify-between items-center bg-[#282828] p-4 rounded-lg shadow-lg">
+                    <span class="text-lg font-semibold">Suco Natural (Laranja/Abacaxi)</span>
+                    <span class="text-lg text-[#f6e05e]">R$ 8,00</span>
+                </div>
+                <!-- Bebida 3 -->
+                <div class="flex justify-between items-center bg-[#282828] p-4 rounded-lg shadow-lg">
+                    <span class="text-lg font-semibold">Água Mineral</span>
+                    <span class="text-lg text-[#f6e05e]">R$ 3,00</span>
+                </div>
+                <!-- Bebida 4 -->
+                <div class="flex justify-between items-center bg-[#282828] p-4 rounded-lg shadow-lg">
+                    <span class="text-lg font-semibold">Cerveja Long Neck (Skol/Sol)</span>
+                    <span class="text-lg text-[#f6e05e]">R$ 10,00</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
